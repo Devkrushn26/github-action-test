@@ -1,0 +1,23 @@
+name : dev
+age : 20
+active: true
+key : 
+    key : value
+    key2 : value2
+    key3 : 
+        key : value
+        key2 : 1
+
+array  :
+    - itom1
+    - itom2
+    - itom3
+    - {key : value }
+    - key : value
+      key2 : 2
+
+jsonArray : [itom1, itom2 ,itom3 ]
+
+longtext  : > 
+    loereasmkdda sdfsdv
+    sdvsv
