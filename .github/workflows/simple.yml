@@ -28,4 +28,4 @@ jobs:
        steps:
          - name : pwd-print
            run : pwd
-           shell : besh
+           shell : bash
