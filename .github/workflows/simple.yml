@@ -21,3 +21,11 @@ jobs:
              import platform
              print(platform.processor())
            shell : python
+
+     not-parrelal : 
+       runs-on : windows-latest
+       needs : ["run-shell-command","prossesor-name"]
+       steps:
+         - name : pwd-print
+           run : pwd
+           shell : besh
