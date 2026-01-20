@@ -7,6 +7,6 @@ jobs:
       - name : actions
         uses: actions/setup-node@v6.2.0
         with:
-          node-version: 6
+          node-version: 4
       - name : node-version
-        run : node-version
+        run : node -v
