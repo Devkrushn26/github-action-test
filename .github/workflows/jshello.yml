@@ -12,3 +12,6 @@ jobs:
           who-to-greet: dev
       - name : output 
         run : echo "${{steps.greet.outputs.time}}"
+
+      - name : checkout
+        uses : actions/checkout@v6.0.1
