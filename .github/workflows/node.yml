@@ -1,0 +1,12 @@
+name : node
+on : [push]
+jobs:
+  node-version : 
+    runs-on: ubuntu-latest
+    steps:
+      - name : actions
+        uses: actions/setup-node@v6.2.0
+        with:
+          node-version: 6
+      - name : node-version
+        run : node-version
