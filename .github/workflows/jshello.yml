@@ -10,8 +10,11 @@ jobs:
         uses : actions/hello-world-javascript-action@v1.1
         with :
           who-to-greet: dev
-      - name : output 
-        run : echo "${{steps.greet.outputs.time}}"
+      - name : befoure checkout 
+        run : ls -a
 
       - name : checkout
         uses : actions/checkout@v6.0.1
+      
+      - name : afetr cheakout 
+        run : ls -a
