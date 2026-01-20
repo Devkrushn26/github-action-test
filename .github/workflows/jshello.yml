@@ -11,4 +11,4 @@ jobs:
         with :
           who-to-greet: dev
       - name : output 
-        run : ecco "${{steps.greet.outputs.time}}"
+        run : echo "${{steps.greet.outputs.time}}"
