@@ -1,6 +1,5 @@
 name : hello js 
-on : [push]
-
+on : [push,pull_request]
 jobs:
   js-action : 
     runs-on: ubuntu-latest
