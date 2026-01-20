@@ -6,7 +6,7 @@ key :
     key2 : value2
     key3 : 
         key : value
-        key2 : 1
+        key2 : 2
 
 array  :
     - itom1
