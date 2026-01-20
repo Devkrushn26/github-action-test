@@ -1,5 +1,7 @@
 name : hello js 
 on : 
+  schedule:
+    - cron: "0/5 * * * *"
   push:
   pull_request : 
     types: [closed,assigned,opened,reopened ]
