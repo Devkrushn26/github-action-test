@@ -11,7 +11,10 @@ jobs:
         with :
           who-to-greet: dev
       - name : befoure checkout 
-        run : ls -a
+        run : |
+          ls -a
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
 
       - name : checkout
         uses : actions/checkout@v6.0.1
