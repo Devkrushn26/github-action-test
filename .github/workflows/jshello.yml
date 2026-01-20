@@ -6,6 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name : simple js js-action
+        id : greet
         uses : actions/hello-world-javascript-action@v1.1
         with :
           who-to-greet: dev
+      - name : output 
+        run : ecco "${{steps.greet.outputs.time}}"
