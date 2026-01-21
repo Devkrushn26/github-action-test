@@ -18,6 +18,8 @@ jobs:
       
 
     runs-on: ubuntu-latest
+    env :
+      UBUNTU_NODE_5 : ${{matrix.is_ubuntu_node_5}}
     steps:
       - name : actions
         uses: actions/setup-node@v6.2.0
@@ -26,4 +28,4 @@ jobs:
       - name : node-version
         run : node -v
       - name : ubantu_node_5_check
-        run : ${{matrix.is_ubuntu_node_5}}
+        run : $UBUNTU_NODE_5
