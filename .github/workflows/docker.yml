@@ -1,0 +1,12 @@
+name : docker
+on : [push]
+
+jobs:
+  img : 
+    runs-on: ubuntu-latest
+    container : 
+      image: node:24-alpine3.22
+    
+    steps : 
+      - name : node container img install
+        run: node-version 
