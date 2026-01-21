@@ -9,4 +9,6 @@ jobs:
     
     steps : 
       - name : node container img install
-        run: node -v
+        run: |
+          node -v
+          cat/etc/os-release
