@@ -2,11 +2,16 @@ name : node
 on : [push]
 jobs:
   node-version : 
+    strategy:
+      metrix : 
+        node_ver : [4,5,6]
+      
+
     runs-on: ubuntu-latest
     steps:
       - name : actions
         uses: actions/setup-node@v6.2.0
         with:
-          node-version: 4
+          node-version: ${{metrix.node_ver}}
       - name : node-version
         run : node -v
