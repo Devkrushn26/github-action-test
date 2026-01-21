@@ -1,0 +1,31 @@
+name : metrrix
+on : [pull_request]
+jobs:
+  node-version : 
+    strategy:
+      matrix : 
+        node_ver : [4,5,6]
+        os : [ubuntu-latest, mac-latest, windowes-latest]
+
+        include : 
+          - os : ubuntu-latest
+            node_ver : 5
+            is_ubuntu_node_5 : "Haaaa"
+
+        exclude : 
+          - os : mac-latest
+            node_ver: 5
+      
+
+    runs-on: ubuntu-latest
+    env :
+      UBUNTU_NODE_5 : ${{matrix.is_ubuntu_node_5}}
+    steps:
+      - name : actions
+        uses: actions/setup-node@v6.2.0
+        with:
+          node-version: ${{matrix.node_ver}}
+      - name : node-version
+        run : node -v
+      - name : ubantu_node_5_check
+        run : echo $UBUNTU_NODE_5
