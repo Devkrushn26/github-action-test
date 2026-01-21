@@ -11,4 +11,4 @@ jobs:
       - name : node container img install
         run: |
           node -v
-          cat/etc/os-release
+          cat /etc/os-release
