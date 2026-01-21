@@ -28,4 +28,4 @@ jobs:
       - name : node-version
         run : node -v
       - name : ubantu_node_5_check
-        run : $UBUNTU_NODE_5
+        run : echo $UBUNTU_NODE_5
