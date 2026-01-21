@@ -3,7 +3,7 @@ on : [push]
 jobs:
   node-version : 
     strategy:
-      metrix : 
+      matrix : 
         node_ver : [4,5,6]
       
 
@@ -12,6 +12,6 @@ jobs:
       - name : actions
         uses: actions/setup-node@v6.2.0
         with:
-          node-version: ${{metrix.node_ver}}
+          node-version: ${{matrix.node_ver}}
       - name : node-version
         run : node -v
