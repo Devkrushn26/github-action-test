@@ -1,5 +1,2 @@
-<<<<<<< HEAD
 "this is first" "from local"
-=======
 "this is first""from remote"
->>>>>>> 04cda9053eba56d5e03ab4a8bba3cc535729e1d2
